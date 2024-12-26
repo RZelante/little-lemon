@@ -14,7 +14,6 @@ nav{
   z-index: 10001;
 }
 
-
 .navbar {
   padding: 10px 13%;
   display: flex;
@@ -28,10 +27,13 @@ nav ul li {
 }
 
 nav ul li a{
+  font-family: 'Karla';
+  font-weight: bold;
   color: #000;
 }
 
 nav ul li a:hover{
+  color: #495E57;
   text-decoration: underline solid #495E57;
   
 }
@@ -80,23 +82,31 @@ nav ul li a:hover{
 }
 
 h1 {
-  font-size: 40px;
+  font-family: 'Markazi Text';
+  font-size: 64pt;
   color: #f4CE14;
   margin: 0;
   padding-top: 20px;
 }
 
 h2 {
-  font-size: 25px;
-  color: #333333;
-  margin: 0;
+  font-family: 'Markazi Text';
+  font-size: 40pt;
+  color: #EDEFEE;
+  margin-top: -30px;
+}
+
+.banner {
+  margin-top: -40px;
 }
 
 .banner p {
-  font-size: 20px;
+  font-family: 'Karla';
+  font-size: 16pt;
   max-width: 520px;
   line-height: 1.5;
   margin-bottom: 30px;
+  margin-top: -30px;
 }
 
 button {
@@ -106,6 +116,7 @@ button {
   border: none;
   text-decoration: none;
   border-radius: 16px;
+  font-family: 'Karla';
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
@@ -114,7 +125,7 @@ button {
 .banner-img{
   position: absolute;
   right: 13%;
-  top: 10%;
+  top: 15%;
   width: 400px;
 }
 
@@ -123,6 +134,239 @@ button {
   height: 400px;
   border-radius: 16px;
 }
+
+/* Menu Section */
+
+.menu-container {
+  margin: 175px auto;
+  padding: 10px 13%;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-container h2 {
+  color: #333333;
+
+  font-size: 3em;
+}
+
+.menu-container img {
+  width: 100%;
+  height: 233px;
+  border-radius: 16px 16px 0 0;
+}
+
+.cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+  font-family: 'Karla';
+}
+
+.delivery {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.delivery img {
+  width: 20px;
+  height: 20px;
+}
+
+.delivery h5 {
+  padding-right: 8px;
+}
+
+.menu-items {
+  height: 550px;
+  width: 325px;
+  background-color: #EDEFEE;
+  border-radius: 16px 16px 0 0;
+  position: relative;
+}
+
+.menu-content, .delivery {
+  padding: 5px 15px;
+}
+
+.menu-content .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-content .heading p {
+  color: #EE9972;
+  font-weight: bold;
+}
+
+.menu-content > p {
+  line-height: 1.5;
+  margin-top: 1px;
+}
+
+/* Testimonial Section */
+
+.review-container {
+  background-color: #EDEFEE;
+  width: 100%;
+  height: 400px;
+}
+
+.review-container h2 {
+  font-family: 'Markazi Text';
+  color: #333333;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.cards-container {
+  width: 60%;
+  margin: auto;
+}
+
+.review-cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em 1em;
+}
+
+.review-items {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  height: 100px;
+  width: 200px;
+  border-radius: 16px;
+  line-height: .05px;
+}
+
+.review-content {
+  margin-left:  15px;
+}
+
+.review-title, .review-description {
+  margin-left: 8px;
+}
+
+.review-items img {
+  margin-left: 20px;
+  height: 40px;
+  width: auto;
+}
+
+/* Company History Section*/
+
+.history-container {
+  width: 100%;
+  height: 600px;
+}
+
+.company-content-container {
+  display: flex;
+  justify-content: space-between;
+  width: 874px;
+  height: 474px;
+  margin: 120px auto;
+}
+
+.company-info {
+  width: 399px;
+  height: 388px;
+}
+
+.company-info p {
+  text-indent: 20px;
+  font-family: 'Karla';
+  font-size: 12pt;
+  line-height: 1.5;
+}
+
+.company-info h1, .company-info h2{
+  color: #495E57;
+}
+
+.company-images {
+  display: flex;
+  width: 445px;
+  height: 466px;
+}
+
+.company-images img {
+  position: relative;
+  height: 365px;
+  width: 297px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 
+  rgba(0, 0, 0, 0.2), 0 6px 20px 0 
+  rgba(0, 0, 0, 0.19);
+}
+
+.companyImg-A {
+  object-position: 70%;
+  right: 30%;
+  z-index: 1;
+}
+
+.companyImg-B {
+  margin-top: 24%;
+  margin-left: 20%;
+  z-index: 0;
+  object-position: 100% 10%;
+}
+
+/* Footer Section*/
+
+.footer {
+  background-color: #EE9972;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 100px;
+}
+
+.footer-links ul {
+  padding: 0;
+  margin-top: 20px;
+  line-height: 2em;
+}
+
+.footer-links a {
+  color: #333333;
+  font-family: 'Karla';
+  font-weight: 300;
+}
+
+.footer img {
+  width: 158px;
+  height: 269px;
+  border-radius: 16px;
+  margin: 50px;
+}
+
+
+
+
+
 
 
 
@@ -136,6 +380,10 @@ button {
 @media screen and (max-width : 768px) {
   .menu-icon {
     display: block;
+  }
+
+  .logo {
+    padding-left: 6%;
   }
 
   .nav-links {
@@ -160,5 +408,9 @@ button {
 
   .bar{
     background: #333333;
+  }
+
+  .banner-img {
+    display: none;
   }
 }
