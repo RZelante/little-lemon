@@ -71,19 +71,23 @@ nav ul li a:hover{
 
 /* Header*/
 .header {
+  width: 100%;
   background-color: #495E57;
   padding: 15px 0;
+  
 }
 
-.header section {
+.home-header-section {
   color: #EDEFEE;
   padding: 15px 13% ;
   position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
 h1 {
   font-family: 'Markazi Text';
-  font-size: 64pt;
+  font-size: 5em;
   color: #f4CE14;
   margin: 0;
   padding-top: 20px;
@@ -91,13 +95,14 @@ h1 {
 
 h2 {
   font-family: 'Markazi Text';
-  font-size: 40pt;
+  font-size: 3.3em;
   color: #EDEFEE;
   margin-top: -30px;
 }
 
 .banner {
   margin-top: -40px;
+  min-width: 400px;
 }
 
 .banner p {
@@ -109,7 +114,7 @@ h2 {
   margin-top: -30px;
 }
 
-button {
+button, .submit {
   background-color: #F4CE14;
   color: black;
   padding: 14px 18px;
@@ -117,32 +122,31 @@ button {
   text-decoration: none;
   border-radius: 16px;
   font-family: 'Karla';
-  font-size: 20px;
+  font-size: 1.3em;
   font-weight: bold;
   cursor: pointer;
 }
 
-.banner-img{
-  position: absolute;
-  right: 13%;
-  top: 15%;
-  width: 400px;
-}
-
-.banner-img img {
-  width: 100%;
+.banner-img {
+  margin-left: 20%;
+  width: 700px;
   height: 400px;
   border-radius: 16px;
+  object-fit: cover;
+  position: relative;
+  top: 70px;
 }
 
 /* Menu Section */
 
 .menu-container {
-  margin: 175px auto;
-  padding: 10px 13%;
+  margin: 155px auto;
+  padding: 10px 10%;
 }
 
 .menu-header {
+  margin-left: 4%;
+  margin-right: 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -151,7 +155,6 @@ button {
 
 .menu-container h2 {
   color: #333333;
-
   font-size: 3em;
 }
 
@@ -164,7 +167,7 @@ button {
 .cards {
   margin-top: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem 1rem;
@@ -220,7 +223,7 @@ button {
 .review-container {
   background-color: #EDEFEE;
   width: 100%;
-  height: 400px;
+  padding-bottom: 6%;
 }
 
 .review-container h2 {
@@ -236,7 +239,6 @@ button {
 }
 
 .review-cards {
-  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -284,7 +286,7 @@ button {
 }
 
 .company-info {
-  width: 399px;
+  width: 450px;
   height: 388px;
 }
 
@@ -301,14 +303,14 @@ button {
 
 .company-images {
   display: flex;
-  width: 445px;
+  width: 50%;
   height: 466px;
 }
 
 .company-images img {
   position: relative;
   height: 365px;
-  width: 297px;
+  width: 68%;
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 4px 8px 0 
@@ -318,13 +320,13 @@ button {
 
 .companyImg-A {
   object-position: 70%;
-  right: 30%;
+  right: 40%;
   z-index: 1;
 }
 
 .companyImg-B {
   margin-top: 24%;
-  margin-left: 20%;
+  margin-left: 10%;
   z-index: 0;
   object-position: 100% 10%;
 }
@@ -334,19 +336,21 @@ button {
 .footer {
   background-color: #EE9972;
   display: flex;
-  gap: 10px;
+  gap: 1.5em;
   align-items: center;
   justify-content: center;
 }
 
 .footer-links {
   display: flex;
-  gap: 100px;
+  flex-wrap: wrap;
+  gap: 9em;
+  font-family: 'Karla';
 }
 
 .footer-links ul {
   padding: 0;
-  margin-top: 20px;
+  margin-top: 1em;
   line-height: 2em;
 }
 
@@ -357,8 +361,8 @@ button {
 }
 
 .footer img {
-  width: 158px;
-  height: 269px;
+  width: 11%;
+  height: auto;
   border-radius: 16px;
   margin: 50px;
 }
@@ -367,17 +371,20 @@ button {
 
 .booking-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  margin-top: 1em;
 }
 
 .booking-container h2 {
   text-align: center;
-  margin-top: 12px;
+  margin-top: 5%;
 }
 
 .ocassion-btn, .guests-btn, .table-btn {
-  width: 300px;
+  margin: 0;
+  width: 250px;
+  font-size: 1em;
 }
 
 .button-list ul{
@@ -398,15 +405,49 @@ button {
 }
 
 .booking-img {
-  width: 874px;
+  width: 865px;
   height: 365px;
-  margin-top: 30px;
   object-fit: cover;
   object-position: 0 75%;
   border-radius: 16px;
-  box-shadow: 0 4px 8px 0 
-  rgba(0, 0, 0, 0.2), 0 6px 20px 0 
+  box-shadow: 0 4px 8px 0
+  rgba(0, 0, 0, 0.2), 0 6px 20px 0
   rgba(0, 0, 0, 0.19);
+}
+
+form {
+  background-color: #EDEFEE;
+  width: 46%;
+  height: 560px;
+  border-radius: 16px;
+  margin: 50px auto 50px;
+}
+
+form input {
+  width: 70%;
+  height: 72px;
+  border: none;
+  border-radius: 16px;
+  display: flex;
+  margin: 40px auto 0;
+  font-family: 'Karla';
+  font-size: 12pt;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+label {
+  font-family: 'Karla';
+  font-weight: bold;
+  font-size: 12pt;
+  position: relative;
+  left: 15%;
+  top: 5%;
+}
+
+.submit {
+  width: 203px;
+  margin-top: 45px;
 }
 
 
@@ -421,7 +462,7 @@ button {
 
 
 
-@media screen and (max-width : 768px) {
+@media screen and (max-width : 919px) {
   .menu-icon {
     display: block;
   }
@@ -454,7 +495,112 @@ button {
     background: #333333;
   }
 
-  .banner-img {
+  .header img {
     display: none;
   }
+
+  .header section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-container h2 {
+    padding: 0;
+    margin: -130px auto 5px;
+    font-size: 2.4em;
+  }
+
+  .menu-container {
+    margin-top: 3%;
+  }
+
+  .menu-header {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .review-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .history-container {
+    margin-bottom: 5em;
+  }
+
+  .company-images {
+    display: none;
+  }
+
+  .company-content-container {
+    display: block;
+    width: 100%;
+    margin-top: 6em;
+  }
+
+  .company-info {
+    display: block;
+    margin: -10% auto;
+    max-width: 75%;
+    height: auto;
+  }
+
+  .company-info h1 {
+    line-height: .7;
+    margin: 1em auto 0;
+    padding-top: .5em;
+  }
+
+  .company-info h2 {
+    margin-top: -.2em;
+    margin-bottom: .5em;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: -11%;
+    margin-right: 11%;
+    gap: 1em;
+    font-size: smaller;
+
+  }
+
+  .footer-links ul {
+    font-size: smaller;
+    line-height: 1.3;
+  }
+
+  .booking-img {
+    display: none;
+  }
+
+  .button-list ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  form {
+    width: 70%;
+  }
+
+
+
+
+
 }

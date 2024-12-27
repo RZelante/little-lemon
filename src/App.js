@@ -16,12 +16,12 @@ function App() {
   return (
     <>
       <Nav/>
-      <Routes>
-        <Route path='/' element={<Header/>}/>
-        <Route path='/about' element={<CompanyHistory/>}/>
-        <Route path='/menu' element={<Menu/>}/>
-        <Route path='/reservations' element={<BookingPage/>}/>
-      </Routes>
+        <Routes>
+          <Route path='/' element={<Header/>}/>
+          <Route path='/about' element={<CompanyHistory/>}/>
+          <Route path='/menu' element={<Menu/>}/>
+          <Route path='/reservations' element={<BookingPage/>}/>
+        </Routes>
       <Menu/>
       <Testimonials/>
       <CompanyHistory/>

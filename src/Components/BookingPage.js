@@ -23,6 +23,18 @@ function BookingPage() {
                     </li>
                 </ul>
             </div>
+            <form action="">
+                <label htmlFor="fname">First name</label>
+                <input type="text" id='fname' name='fname' />
+
+                <label htmlFor="lname">Last Name</label>
+                <input type="text" id='lname' name='lname' />
+                
+                <label htmlFor="email">Email</label>
+                <input type='email' id='email' name='email' />
+
+                <input type="submit" value="Submit" className='submit'></input>
+            </form>
         </div>
         
     </header>
