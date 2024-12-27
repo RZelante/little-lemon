@@ -363,7 +363,51 @@ button {
   margin: 50px;
 }
 
+/* Booking Page Section*/
 
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-container h2 {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.ocassion-btn, .guests-btn, .table-btn {
+  width: 300px;
+}
+
+.button-list ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+  padding: 0;
+}
+
+.button-list li {
+  text-align: center;
+  color: #EDEFEE;
+  font-family: 'Karla';
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+.booking-img {
+  width: 874px;
+  height: 365px;
+  margin-top: 30px;
+  object-fit: cover;
+  object-position: 0 75%;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 
+  rgba(0, 0, 0, 0.2), 0 6px 20px 0 
+  rgba(0, 0, 0, 0.19);
+}
 
 
 
