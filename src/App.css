@@ -416,39 +416,87 @@ button, .submit {
 }
 
 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #EDEFEE;
-  width: 46%;
-  height: 560px;
+  width: 850px;
+  height: 580px;
   border-radius: 16px;
   margin: 50px auto 50px;
 }
 
-form input {
-  width: 70%;
+form input, #res-time, #occasion {
+  margin-top: 15px;
   height: 72px;
   border: none;
   border-radius: 16px;
-  display: flex;
-  margin: 40px auto 0;
   font-family: 'Karla';
   font-size: 12pt;
   font-weight: bold;
-  padding-left: 20px;
 }
 
 label {
   font-family: 'Karla';
   font-weight: bold;
   font-size: 12pt;
-  position: relative;
-  left: 15%;
-  top: 5%;
+}
+
+input[type=text], [type=email], [type=number], [type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.field-input{
+  margin-top: 10px;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+ input:focus:invalid {
+  border: 4px solid red;
+ }
+
+ button:disabled {
+  color: lightgray;
+  background-color: #495E57;
+ }
+
+.res-info {
+  width: 30%;
+}
+
+.cust-info {
+  width: 70%;
 }
 
 .submit {
+  margin: 0;
   width: 203px;
-  margin-top: 45px;
 }
+
+fieldset {
+  border: none;
+}
+
+.confirmed {
+  margin: auto;
+  text-align: center;
+}
+
+.comfirmed span{
+  color: blue;
+}
+
+
+
+
+
+
 
 
 
