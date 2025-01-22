@@ -10,6 +10,9 @@ function BookingForm(props) {
     const [lname, setLname] = useState ("");
     const [email, setEmail] = useState ("");
 
+    const scrollToTop = () => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
 
 
     const handleSubmit = (e) => {
@@ -29,8 +32,6 @@ function BookingForm(props) {
         setDate(e);
         props.dispatch(e);
     }
-
-
 
 
   return (
@@ -115,6 +116,7 @@ function BookingForm(props) {
                 value='Submit'
                 className='submit'
                 aria-label='On Click'
+                onClick={scrollToTop}
                 disabled={!email || !time || !fname}>
                 Reserve
             </button>
